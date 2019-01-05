@@ -2,8 +2,9 @@ const Product = require("../models/player.model.js");
 
 exports.test = function(req,res){
   res.send("looks quite good!!!");
-}
+} //the basic testing querry!!!
 
+//the function to create a new Player object!!!
 exports.create = function(req,res){
   let product = new Product({
     player : req.body.player,
@@ -21,6 +22,7 @@ exports.create = function(req,res){
 
 };
 
+//the function to read a Player object in json
 exports.read = function(req,res){
   //var idd="5c306ea8617f7d12101711c9";
   Product.findById(req.params.id,function(error,product){
@@ -33,6 +35,7 @@ exports.read = function(req,res){
 
 };
 
+//the function to update a Player object!!! 
 exports.update = function(req,res){
   Product.findByIdAndUpdate(req.params.id,{$set:req.body},function(error){
     if(error){
@@ -42,8 +45,10 @@ exports.update = function(req,res){
   });
 }
 
+
+//the function to delete a Player object!!!
 exports.delete = function(req,res){
-  Product.findByIdAndRemove(req.params.id,function(error){
+  Product.findByIdAndRemove(req.params.id,function(error){ // player is removed with reference to id
     res.send("player removed successfully!!!");
   });
 };
