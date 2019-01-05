@@ -13,10 +13,10 @@ mongoose.connection.once("open",function(){
   console.log("error in connction: ",error);
 });
 
-const product = require("./routes/player.route.js");
-app.use(bodyParser.json());
+const player = require("./routes/player.route.js");
+app.use(bodyParser.json());//to handle the json format
 app.use(bodyParser.urlencoded({extended: false}));
-app.use("/products",product);
+app.use("/players",player);// the url starts with /players and is directed to player.router.js
 
 app.listen(3000);
 console.log("successfully connected to port 3000!!!");
