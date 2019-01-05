@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 
 const app = express();
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost/product_database"
+mongoose.connect("mongodb://localhost/player_database"
 ,{ useNewUrlParser: true });
 
 mongoose.connection.once("open",function(){
