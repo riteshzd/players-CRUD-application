@@ -4,6 +4,15 @@ exports.test = function(req,res){
   res.send("Looks quite good!!!");
 } //the basic testing querry!!!
 
+exports.search = function(req,res){
+  Product.find({position : req.params.pos},function(error,players){
+    if(error)
+    return(error);
+    res.json(players);
+  });
+  //searches player as per position!!!
+};
+
 //the function to create a new Player object!!!
 exports.create = function(req,res){
   let product = new Product({
