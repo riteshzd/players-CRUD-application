@@ -10,6 +10,23 @@ To see the working, first one needs to run mongod.exe in cmd and then run the ap
 POSTMAN and corresponding results can be seen through Robo3T.
 I am still trying to add more features into this API and I will commit the changes if any.
 
+All available routes are
+
+/get - Sample route to check the connection
+
+/create - Route to create a player object
+
+/:id  - Route to read info about a particular player
+
+/:id/update - Route to update info about a player
+
+/:id/delete - Route to delete a player
+
+/search/:pos - Route to search players for a particular position
+
 EDIT 1
 The player field in the schema is renamed into name field
+
+EDIT 2
+A new route is added in which players of a particular position can be searched.
 
