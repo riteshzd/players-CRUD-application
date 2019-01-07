@@ -9,3 +9,7 @@ I used Robo3T to view the database, for easier checking of info during operation
 To see the working, first one needs to run mongod.exe in cmd and then run the app.js file. Then the operations can be done in 
 POSTMAN and corresponding results can be seen through Robo3T.
 I am still trying to add more features into this API and I will commit the changes if any.
+
+EDIT 1
+The player field in the schema is renamed into name field
+
