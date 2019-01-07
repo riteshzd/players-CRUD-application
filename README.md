@@ -25,8 +25,10 @@ All available routes are
 /search/:pos - Route to search players for a particular position
 
 EDIT 1
+
 The player field in the schema is renamed into name field
 
 EDIT 2
+
 A new route is added in which players of a particular position can be searched.
 
