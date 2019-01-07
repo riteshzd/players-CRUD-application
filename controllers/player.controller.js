@@ -1,13 +1,13 @@
 const Product = require("../models/player.model.js");
 
 exports.test = function(req,res){
-  res.send("looks quite good!!!");
+  res.send("Looks quite good!!!");
 } //the basic testing querry!!!
 
 //the function to create a new Player object!!!
 exports.create = function(req,res){
   let product = new Product({
-    player : req.body.player,
+    name : req.body.name,
     age : req.body.age,
     club : req.body.club,
     position : req.body.position
@@ -17,7 +17,7 @@ exports.create = function(req,res){
     if(error){
       return(error);
     }
-    res.send("player created successfully!!!");
+    res.send("Player created successfully!!!");
   });
 
 };
@@ -41,7 +41,7 @@ exports.update = function(req,res){
     if(error){
       return(error);
     }
-    res.send("player is updated successfully!!!");
+    res.send("Player is updated successfully!!!");
   });
 }
 
@@ -49,6 +49,6 @@ exports.update = function(req,res){
 //the function to delete a Player object!!!
 exports.delete = function(req,res){
   Product.findByIdAndRemove(req.params.id,function(error){ // player is removed with reference to id
-    res.send("player removed successfully!!!");
+    res.send("Player removed successfully!!!");
   });
 };
