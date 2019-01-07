@@ -3,11 +3,11 @@ const Schema = mongoose.Schema;
 
 //the schema used for the Player collection!!!
 const PlaySchema = new Schema({
-  player:String,
+  name:String,
   age:Number,
   club:String,
   position:String
-  //player,age,club,position,rating
+  //name,age,club,position,rating
 });
 
 module.exports = mongoose.model("player",PlaySchema);
