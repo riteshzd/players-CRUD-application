@@ -24,6 +24,8 @@ All available routes are
 
 /search/:pos - Route to search players for a particular position
 
+/sort/:pos - Route to sort players as per their age (preferably ratings) for a particular position
+
 EDIT 1
 
 The player field in the schema is renamed into name field
@@ -31,4 +33,8 @@ The player field in the schema is renamed into name field
 EDIT 2
 
 A new route is added in which players of a particular position can be searched.
+
+EDIT 3
+
+A new route is added so that we can find out players in a sorted order of a given parameter for a position. Presently, it is being added as age but I plan to introduce ratings for players giving priority to various contributions. The route will give players in increasing order of ratings for a particular position.
 
