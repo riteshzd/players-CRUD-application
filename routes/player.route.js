@@ -7,7 +7,7 @@ router.get("/test",player_controller.test);//url to test the server!!!
 
 router.get("/search/:pos",player_controller.search);//url to search players in a particular position!!!
 
-router.get("/sort/:pos",player_controller.sort");//url to sort players as per their ratings for a particular position!!!
+router.get("/sort/:pos",player_controller.sort);//url to sort players as per their ratings for a particular position!!!
 
 router.post("/create",player_controller.create);//url to create a player object!!!
 
