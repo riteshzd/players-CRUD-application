@@ -13,6 +13,16 @@ exports.search = function(req,res){
   //searches player as per position!!!
 };
 
+exports.sort = function(req,res){
+  Player.find({}).sort({age:1}).find({position:req.params.pos},function(error,players){ //age will be changed to ratings preferably
+    if(error)
+    return (error);
+    res.json(players);
+  });
+  //sorts player according to their ratings for a particular position!!!
+};
+
+
 //the function to create a new Player object!!!
 exports.create = function(req,res){
   let player = new Player({
