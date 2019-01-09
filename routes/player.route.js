@@ -5,7 +5,7 @@ const player_controller = require("../controllers/player.controller.js");
 
 router.get("/test",player_controller.test);//url to test the server!!!
 
-router.get("/search/:pos",player_controller.search);//url to search players in a particular position!!!
+router.get("/search/:club",player_controller.search);//url to search players in a particular club!!!
 
 router.get("/sort/:pos",player_controller.sort);//url to sort players as per their ratings for a particular position!!!
 
