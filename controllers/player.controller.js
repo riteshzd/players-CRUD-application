@@ -5,7 +5,7 @@ exports.test = function(req,res){
 } //the basic testing querry!!!
 
 exports.search = function(req,res){
-  Player.find({position : req.params.pos},function(error,players){
+  Player.find({position : req.params.club},function(error,players){
     if(error)
     return(error);
     res.json(players); //the collection is the output!!!
@@ -14,7 +14,7 @@ exports.search = function(req,res){
 };
 
 exports.sort = function(req,res){
-  Player.find({}).sort({age:1}).find({position:req.params.pos},function(error,players){ //age will be changed to ratings preferably
+  Player.find({}).sort({rating:-1}).find({position:req.params.pos},function(error,players){ //decreasing order of player ratings!!!
     if(error)
     return (error);
     res.json(players);
