@@ -42,3 +42,5 @@ EDIT 4
 
 I have added the player ratings as the sorting criteria. Since both /search and /sort would give redundant results, I have restricted the /search to a particular club rather than a particular position, where /sort serves the purpose.
 
+
+PS- I used https://www.whoscored.com/ to update the player ratings in my database. I had thought to divide priorities between a players various statistics to find a player's rating, but that won't give the accurate rating of a player. So I decidet to take help from this website. 
