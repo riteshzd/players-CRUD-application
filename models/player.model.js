@@ -6,7 +6,8 @@ const PlaySchema = new Schema({
   name:String,
   age:Number,
   club:String,
-  position:String
+  position:String,
+  rating:Number
   //name,age,club,position,rating
 });
 
