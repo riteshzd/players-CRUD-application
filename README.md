@@ -22,9 +22,9 @@ All available routes are
 
 /:id/delete - Route to delete a player
 
-/search/:pos - Route to search players for a particular position
+/search/:club - Route to search players for a particular club
 
-/sort/:pos - Route to sort players as per their age (preferably ratings) for a particular position
+/sort/:pos - Route to sort players as per their ratings for a particular position
 
 EDIT 1
 
@@ -37,4 +37,8 @@ A new route is added in which players of a particular position can be searched.
 EDIT 3
 
 A new route is added so that we can find out players in a sorted order of a given parameter for a position. Presently, it is being added as age but I plan to introduce ratings for players giving priority to various contributions. The route will give players in increasing order of ratings for a particular position.
+
+EDIT 4
+
+I have added the player ratings as the sorting criteria. Since both /search and /sort would give redundant results, I have restricted the /search to a particular club rather than a particular position, where /sort serves the purpose.
 
